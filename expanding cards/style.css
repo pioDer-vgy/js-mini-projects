@@ -9,6 +9,7 @@ body{
     place-content: center;
     min-height: 100vh;
     overflow: hidden;
+    background-color: rgb(206, 206, 206);
 }
 
 #container{
@@ -24,7 +25,7 @@ body{
     border-radius: 50px;
     position: relative;
     flex: 0.5;
-    color: #FFF;
+    color: #ffffff;
     cursor: pointer;
     margin: 10px;
     transition: flex 0.5s ease-in;
@@ -44,4 +45,8 @@ body{
 
 .img.active h3{
     opacity: 1;
+}
+
+.img:nth-child(6) {
+    color: black;
 }

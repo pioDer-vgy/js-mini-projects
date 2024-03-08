@@ -19,7 +19,7 @@ body{
 
 #progress-cont{
     display: flex;
-    max-width: 100%;
+    width: 100%;
     width: 350px;
     justify-content: space-between;
     margin-bottom: 30px;
