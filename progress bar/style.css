@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#container{
+    text-align: center;
+}
+
+#progress-cont{
+    display: flex;
+    max-width: 100%;
+    width: 350px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+#progress{
+    background-color: #3498db;
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    height: 4px;
+    width: 0%;
+    z-index: -1;
+    transition: 0.4s ease;
+}
+
+.circle{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+    border: 3px solid #e0e0e0;
+    transition: 0.4s ease;
+}
+
+.circle.active{
+    border-color: #3498db;
+}
+
+.btn{
+    font-size: 14px;
+    padding: 10px 30px;
+    background-color: #3498db;
+    color:#fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn:disabled{
+    background-color: #e0e0ee;
+    cursor: not-allowed;
+}
