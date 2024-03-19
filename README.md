@@ -1,3 +1,3 @@
 # js-mini-projects
 
-małe projekty do javascripotu thats all
+małe projekty do javascript thats all
