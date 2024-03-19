@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: figtree;
+      src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+    }
+
+    *{
+      box-sizing: border-box;
+    }
+
+    body{
+      margin: 0;
+      height: 100vh;
+      display: grid;
+      place-content: center;
+      background-color: hsl(47, 88%, 63%);
+      font-size: 16px;
+      font-family: figtree;
+    }
+
+    #container{
+      background-color: hsl(0, 0%, 100%);
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      width: 400px;
+      border: 1px solid black;
+      border-radius: 15px;
+      box-shadow: 6px 6px black;
+    }
+
+    img{
+      border-radius: 10px;
+    }
+
+    #b1{
+      margin: 15px 0;
+      background-color: hsl(47, 88%, 63%);
+      padding: 10px;
+      border-radius: 5px;
+      width: 27%;
+      font-weight: 800;
+    }
+
+    #b2{
+      font-weight: 500;
+    }
+
+    h1{
+      font-weight: 800;
+    }
+
+    p{
+      color: hsl(0, 0%, 50%);
+      font-weight: 500;
+    }
+
+    #avatar{
+      display: flex;
+    }
+  
+    #av{
+      width: 40px;
+      margin: 10px;
+      font-weight: 800;
+    }
+
+    .attribution { 
+      font-size: 11px; text-align: center; 
+      padding-top: 30px;
+    }
+
+    .attribution a {
+       color: hsl(228, 45%, 44%); 
+      }
+  </style>
+</head>
+<body>
+
+  <section id="container">
+    <img src="assets/images/illustration-article.svg" alt="img">
+    <b id="b1">Learning</b>
+    <b id="b2">Published 21 Dec 2023</b>
+    <h1>HTML & CSS foundations</h1>
+    <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+    <section id="avatar">
+      <img src="assets/images/image-avatar.webp" alt="avatar" id="av">
+      <h3>Greg Hooper</h3>
+    </section>
+  </section>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">pioDer-vgy</a>.
+  </div>
+</body>
+</html>
